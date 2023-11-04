@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'CocoSharp-Light';
+  src: url('CocoSharp-Light.otf');
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'CocoSharp-Light';
+
+  .container, .message {
+    padding: 30px 40px;
+    background-color: #fefefe;
+    color: #3b3b3b;
+    border: solid 1px #eeeeee;
+    box-shadow: 5px 5px 5px -5px;
+    text-align: center;
+
+    .title {
+      color: #ff3b3b;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      .correct, .incorrect {
+        color: #ff6a6a;
+        font-size: 12px;
+        letter-spacing: normal;
+      }
+    }
+    .question {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 60px;
+      height: 70px;
+      letter-spacing: 0.3em;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 10px;
+    }
+    .answer {
+      margin-top: 20px;
+      .inputAnswer {
+        height: 70px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 0.3em;
+      }
+      .inputPanel {
+        margin-top: 20px;
+        text-align: center;
+        button {
+          background-color: #fefefe;
+          color: #7e7e7e;
+          border: none;
+          font-size: 30px;
+          width: 60px;
+          height: 60px;
+          &:hover {
+            background-color: #eeeeee;
+          }
+        }
+      }
+    }
+    .resultMessage {
+      text-align: center;
+      color: #ff3b3b;
+      font-size: 30px;
+    }
+    .retryButton {
+      margin-top: 20px;
+      text-align: center;
+      background-color: inherit;
+      border: none;
+      font-size: 20px;
+    }
+  }
+}
+
